@@ -8,10 +8,10 @@
     <script defer src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
@@ -21,13 +21,98 @@
   <body>
     <header>
       <nav>
-        <img
-          src="img/yeah1.png"
-          border="0"
-          alt="Logo Design by FlamingText.com"
-          title="Logo Design by FlamingText.com"
-        />
-        <ul class="nav__links">
+        <a class="word" href="#">
+          <span> BA NGHIA</span>
+        </a>
+        <div class="menu">
+          <div class="collapse-state menu-showup"></div>
+
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a class="nav__link" href="#work">Work</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#section--2">About</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#section--3">Resume</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--btn btn--show-modal" href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="header-bg">
+        <div class="content-wrapper">
+          <h2 class="one">
+            <span class="blast">H</span><span class="blast">i</span>
+            <span class="blast">,</span><br />
+            <span class="blast">I</span><span class="blast">'</span
+            ><span class="blast">m</span> <span class="blast">N</span
+            ><span class="blast">g</span><span class="blast">h</span
+            ><span class="blast">i</span><span class="blast">a</span>
+          </h2>
+
+          <div id="flip" class="two">
+            <div><div>software engineer</div></div>
+            <div><div>front-end developer</div></div>
+            <div><div>back-end developer</div></div>
+          </div>
+          <button class="btn-touch">
+            <span class="bg"></span>
+            <span class="text">Get in touch!</span>
+          </button>
+        </div>
+
+        <div class="header=img">
+          <img src="img/new.png" alt="My picture" />
+        </div>
+      </section>
+      <section class="header-note">
+        <p>
+          By clicking on scoll button, you can find out more about what I am
+          currently working on!
+        </p>
+        <a href="#" class="scrolldown">
+          <svg
+            class="svga"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
+            />
+          </svg>
+        </a>
+      </section>
+      <section class="overlay">
+        <a href ="#" class="cancel">
+          <svg
+            class="svgb"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+        </a>
+        
+        <ul class="nav__links visible">
           <li class="nav__item">
             <a class="nav__link" href="#section--1">Work</a>
           </li>
@@ -43,18 +128,29 @@
             >
           </li>
         </ul>
-      </nav>
-      <section class="header-bg">
-        <div class="content-wrapper">
-          <img class="header-img" src="img/nghiavo12.png" />
-          <h2>Hi, I'm Nghia</h2>
-          <h3>
-            A <span class="highlight"><b>self-taught</b></span> software
-            engineer
-          </h3>
-          <button class="btn-touch">Get in touch</button>
-        </div>
       </section>
     </header>
+    <main>
+      <section class= "work" id ="work">
+        <div class="projects-wrapper">
+          <h1 class="work-title">WORK</h1>
+          <div class="project-grid">
+              <div class="project-card">1</div>
+              <div class="project-card">2</div>
+              <div class="project-card">3</div>
+          </div>
+        </div>
+        
+      </section>
+    </main>
+    <script
+      defer type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      defer
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
